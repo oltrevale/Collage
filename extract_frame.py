@@ -2,7 +2,7 @@ import cv2
 import collage
 import sys
 
-vid = cv2.VideoCapture('cia.mp4')
+vid = cv2.VideoCapture(sys.argv[1])
 vid.set(cv2.CAP_PROP_POS_AVI_RATIO, 1)
 
 print(vid.get(cv2.CAP_PROP_POS_MSEC))
