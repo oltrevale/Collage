@@ -1,8 +1,7 @@
 from PIL import Image
 
 
-def create_collages():
-    listofimages = ['index100.jpg', 'index180.jpg', "index260.jpg", 'index340.jpg', 'index420.jpg', 'index500.jpg']
+def create_collages(listofimages):
     cols = 3
     rows = 2
     width = 5760
