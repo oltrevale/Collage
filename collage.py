@@ -1,20 +1,19 @@
 from PIL import Image
 
 
-def create_collages(listofimages):
-    cols = 3
-    rows = 2
-    width = 5760
-    height = 1080 * 2
-    thumbnail_width = width // cols
-    thumbnail_height = height // rows
-    size = thumbnail_width, thumbnail_height
+def create_collages(listofimages, width, height):
+    cols = 10
+    rows = 10
+    width = width * 10
+    height = height * 10
+    thumbnail_width = int(width / cols)
+    thumbnail_height = int(height / rows)
     new_im = Image.new('RGB', (width, height))
     ims = []
     for p in listofimages:
         im = Image.open(p)
-        im.thumbnail(size)
         ims.append(im)
+    print(ims)
     i = 0
     x = 0
     y = 0
