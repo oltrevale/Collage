@@ -2,6 +2,7 @@ from PIL import Image
 
 
 def create_collages(listofimages, width, height):
+    #todo cols and rows dipenderanno dal numero di frame che serviranno
     cols = 20
     rows = 20
     width = width * 20
